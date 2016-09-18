@@ -720,11 +720,18 @@ void event_loop(void) // handle an event sent by the GUI
 
 int main(int argc, char **argv)
 {
+  if(argc < 2){
+    printf("Error: You have to input a filename.\n");
+    exit(1);
+  }
+
+  input_filename = argv[1];
+  printf("%s, input_filename:%s\n", argv[1], input_filename);
     int flags = SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER;
 
     av_register_all();
 
-    input_filename = "CLOCKTXT_320.avi";
+    
 
     if (SDL_Init(flags)){
 		printf("SDL init fail\n");    
