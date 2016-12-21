@@ -1,5 +1,5 @@
 # hffplay
-This code is copy from ```FFmpeg/FFplay源码剖析[杨书良]```. And I have modified some files so that it can build in linux by cmake.
+This project is copied from ```FFmpeg/FFplay源码剖析[杨书良]```. And I have modified some files so that it can build in linux by cmake.
 
 ##Build&Run
 ###Ubuntu 14.04
